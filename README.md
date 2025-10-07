@@ -48,16 +48,16 @@ This project showcases a complete full-stack application with:
 ```
 aws-services-project/
 │
-├── frontend/
-│   ├── index.html          # Home page
-│   ├── form.html           # Add service form
-│   ├── style.css           # AWS-themed styling
-│   └── script.js           # API integration logic
-│
-├── express-server/
-│   ├── server.js           # Express server
-│   ├── package.json        # Dependencies
-│   └── node_modules/       # (after npm install)
+├──express-frontend 
+|   ├──frontend/
+│   │    ├── index.html          # Home page
+│   │    ├── form.html           # Add service form
+│   │    ├── style.css           # AWS-themed styling
+│   │    └── script.js           # API integration logic
+│   ├──express-server/
+│        ├── server.js           # Express server
+│        ├── package.json        # Dependencies
+│        └── node_modules/       # (after npm install)
 │
 ├── flask-backend/
 │   ├── app.py              # Flask API
