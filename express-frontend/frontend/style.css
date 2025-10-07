@@ -1,0 +1,154 @@
+:root {
+    --aws-orange: #FF9900;
+    --aws-dark-blue: #232F3E;
+    --aws-light-blue: #146EB4;
+    --aws-gray: #687078;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.bg-aws {
+    background: linear-gradient(135deg, var(--aws-dark-blue) 0%, var(--aws-light-blue) 100%) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cloud-icon {
+    font-size: 1.8rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero-section {
+    background: linear-gradient(135deg, rgba(35, 47, 62, 0.9) 0%, rgba(20, 110, 180, 0.9) 100%);
+    color: white;
+    padding: 80px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.btn-aws {
+    background: linear-gradient(135deg, var(--aws-orange) 0%, #ff6b00 100%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 153, 0, 0.3);
+}
+
+.btn-aws:hover {
+    background: linear-gradient(135deg, #ff6b00 0%, var(--aws-orange) 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 153, 0, 0.4);
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.service-card {
+    height: 100%;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h5 {
+    color: var(--aws-light-blue);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: var(--aws-gray);
+    line-height: 1.6;
+}
+
+.badge-aws {
+    background-color: var(--aws-orange);
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.form-control:focus {
+    border-color: var(--aws-light-blue);
+    box-shadow: 0 0 0 0.2rem rgba(20, 110, 180, 0.25);
+}
+
+#loadingSpinner .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+.alert {
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+}

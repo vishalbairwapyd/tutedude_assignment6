@@ -1,0 +1,12 @@
+# Frontend dependencies
+express-frontend/node_modules/
+
+# Backend Python environment
+flask-backend/venv/
+
+# Environment files (contains secrets)
+.env
+
+# Python cache files
+__pycache__/
+*.pyc

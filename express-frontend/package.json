@@ -1,0 +1,21 @@
+{
+  "name": "aws-services-project",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Full-stack AWS services project with Express, Flask, and MongoDB",
+  "scripts": {
+    "start": "cd express-server && node server.js",
+    "dev": "cd express-server && node server.js",
+    "install-express": "cd express-server && npm install",
+    "install-flask": "cd flask-backend && pip install -r requirements.txt",
+    "start-flask": "cd flask-backend && python app.py"
+  },
+  "main": "eslint.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

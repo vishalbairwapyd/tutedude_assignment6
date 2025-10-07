@@ -1,0 +1,41 @@
+aws_services
+project Run without Docker
+
+
+***first run backend ***
+open /flask-backend
+1st step:  create a virtual env
+    command-> python3 -m venv venv
+2nd step: activate virtual env(in linux)
+    command-> source venv/bin/activate
+3rd step: install dependency 
+    command-> pip install -r requirements.txt
+4th step: run project
+    command-> python3 app.py
+
+****Now run frontend *****
+
+1st step: Install dependency
+    command-> npm init -y
+              npm install express
+
+
+2nd step: run frontend project
+    command-> node server.js
+
+
+***********  Run using docker compose  **************
+
+command-> docker compose up --build
+    This will:
+        Build both images
+        Start both containers
+        Connect them via network
+        
+command-> docker compose up -d
+    This will: 
+        run in background
+
+command-> docker compose down
+    This will:
+        to stop containers
