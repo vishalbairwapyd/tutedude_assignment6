@@ -1,4 +1,6 @@
-const API_URL = 'http://localhost:5000';
+const API_URL = undefined || 'http://localhost:5000';
+console.log('Backend URL:', API_URL);
+
 
 async function loadServices() {
     const loadingSpinner = document.getElementById('loadingSpinner');
