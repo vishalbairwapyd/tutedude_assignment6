@@ -22,6 +22,10 @@ db = client.test
 services_collection = db['aws_services']
 # end database configure
 
+@app.route('/api/config')
+def get_config():
+    print("backend running on-> ", request.host_url)
+    return jsonify({'api_url': request.host_url}), 200
 
 @app.route('/')
 def home():
