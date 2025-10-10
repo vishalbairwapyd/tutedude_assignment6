@@ -29,7 +29,7 @@ def get_config():
 
 @app.route('/')
 def home():
-    return "Backend Run Successfully."
+    return jsonify({"message":"Backend Run Successfully."})
 
 @app.route('/api/services', methods=['GET'])
 def get_services():
