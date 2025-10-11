@@ -1,8 +1,10 @@
 # Frontend dependencies
 express-frontend/node_modules/
+express-frontend/express-server/node_modules/
 
 # Backend Python environment
 flask-backend/venv/
+
 
 # Environment files (contains secrets)
 .env
